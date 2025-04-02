@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaceSecure</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Nuevo Trabajador</h1>
+    <form id="worker-form">
+      <input type="text" id="name" placeholder="Nombre">
+      <input type="text" id="lastname" placeholder="Apellido">
+      <input type="text" id="age" placeholder="Edad">
+      <input type="text" id="position" placeholder="Puesto de Trabajo">
+      <input type="text" id="department" placeholder="Departamento">
+      <button type="button" onclick="scanFace()">Capturar Rostro</button>
+      <button type="button" onclick="addWorkerRecord()">Guardar Carnet</button>
+    </form>
+    <div id="camera-feed">
+      <!-- Aquí se mostrará la cámara para el reconocimiento facial -->
+    </div>
+    <div id="photo-container">
+      
+      <!-- Aquí se mostrará la foto capturada -->
+    </div>
+    <div id="records-container">
+      <!-- Aquí se mostrarán los últimos registros -->
+    </div>
+    <button onclick="shareByEmail()">Compartir por Correo</button>
+
+    <a class="btn2" href="Bienvenida.html">Regresar al inicio</a>
+    <!-- <a class="btn2" href="Intento.html">Capturar foto</a> -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
